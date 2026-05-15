@@ -88,8 +88,7 @@ d=d-de;
 C=20e3;
 interval_target=target_den+eplison/sqrt(K*(K-1));
 tic
-for k=1:C
-    %modified Kochengrin algorithm
+for k=1:C  
     e=sqrt(1+d.^2./dv.^2)-d./dv;
     t=d./(1-e.*nv*dray);
     mint_ind=t==min(t);
